@@ -110,6 +110,7 @@ button:hover {
 
 .weather img {
     animation: fadeIn 2s ease-in-out;
+    animation: movingIcon 3s infinite;
 }
 
 .subtitle {
@@ -161,5 +162,20 @@ button:hover {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes movingIcon{
+    0%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(-10px)
+    }
+    75%{
+        transform: translateY(5px)
+    }
+    100%{
+        transform: translatey(0px)
     }
 }
