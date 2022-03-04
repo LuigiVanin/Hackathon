@@ -4,7 +4,7 @@ function getTemperature(lat, lon){
 }
 
 function printInfo(answer){
-    const temperature = (answer.data.main.temp - 273.15).toFixed(2);
+    const temperature = (answer.data.main.temp - 273.15).toFixed(1);
 
     const icon = answer.data.weather[0].icon;
     const cityName = answer.data.name;

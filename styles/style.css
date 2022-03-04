@@ -59,6 +59,20 @@ input {
     background-color: rgb(238, 238, 238);
 }
 
+.weather > div{
+    display: flex;
+    align-items: center;
+}
+
+.weather > div > p{
+    color: white;
+    font-size: 50px;
+}
+
+.weather > p{
+    color: white;
+}
+
 .search {
     width: 42px;
     font-size: 24px;
