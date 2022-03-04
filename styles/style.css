@@ -59,17 +59,36 @@ input {
     background-color: rgb(238, 238, 238);
 }
 
-.weather > div{
+.weather > .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding-left: 20px;
+    border-left: 2px rgb(160, 160, 160) solid;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.weather .image {
+    height: 150px;
     display: flex;
     align-items: center;
 }
 
-.weather > div > p{
+.weather > .info > h1 {
     color: white;
     font-size: 50px;
 }
 
-.weather > p{
+.weather > .info > p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.weather > p {
     color: white;
 }
 
@@ -106,10 +125,15 @@ button:hover {
     height: calc(100% - 92px);
     margin-inline: auto;
     background-color: transparent;
+    display: flex;
+    padding-top: 45px;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .weather img {
     animation: fadeIn 2s ease-in-out;
+    width: 120px;
 }
 
 .subtitle {
