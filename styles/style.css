@@ -3,7 +3,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #333338, #181820);
+    background: linear-gradient(to right, #333338, #2e2e36);
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@ main {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 1px 1px 15px 5px rgba(255, 255, 255, 0.158);
+    box-shadow: -1px -1px 15px 0px rgba(255, 255, 255, 0.158);
 }
 
 form {
@@ -31,18 +31,34 @@ form {
 }
 
 input {
-    width: 30%;
-    padding-inline: 5px;
+    width: 25%;
+    padding-inline: 10px;
     padding-block: 10px;
     border-radius: 5px;
     outline: none;
     border: none;
+    font-size: 19px;
+    background-color: rgb(238, 238, 238);
 }
 
 .search {
-    width: 35px;
+    width: 42px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.search ion-icon {
+    padding-bottom: -5px;
 }
 
 button {
-    height: 35px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    font-size: 19px;
+    background-color: rgb(113, 103, 252);
+    color: white;
+    font-weight: bold;
 }
