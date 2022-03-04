@@ -4,5 +4,5 @@ function getTemperature(lat, lon){
 }
 
 function printTemperature(answer){
-    console.log(answer.data.main.temp - (273,15).toFixed(3));
+    console.log(answer.data.main.temp - (273.15).toFixed(2));
 }
