@@ -7,14 +7,17 @@ function printInfo(answer){
     const temperature = (answer.data.main.temp - 273.15).toFixed(2);
 
     const icon = answer.data.weather[0].icon;
+    const cityName = answer.data.name;
 
     const putIcon = document.querySelector(".weather");
+    
     putIcon.innerHTML = `
     <div>
     <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="">
     <p>${temperature}°C</p>
     </div>
+    <p>${cityName}</p>
     `;
 
-    const cityName = answer.data.name;
+    
 }
