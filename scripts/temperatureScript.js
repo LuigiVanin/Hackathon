@@ -12,4 +12,6 @@ function printTemperature(answer){
     putIcon.innerHTML = `
     <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="">
     `;
+
+    const cityName = answer.data.name;
 }
