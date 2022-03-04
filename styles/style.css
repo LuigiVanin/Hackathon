@@ -132,8 +132,9 @@ button:hover {
 }
 
 .weather img {
-    animation: fadeIn 2s ease-in-out;
+    /* animation: fadeIn 2s ease-in-out; */
     width: 120px;
+    animation: fadeIn 2s ease-in-out, movingIcon 3s infinite;
 }
 
 .subtitle {
@@ -185,5 +186,23 @@ button:hover {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes movingIcon {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-4px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(4px);
+    }
+    100% {
+        transform: translatey(0px);
     }
 }

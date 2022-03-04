@@ -14,6 +14,7 @@ function getLocal(){
             lat = position.coords.latitude
             long = position.coords.longitude
             fillInputs()
+            submitGeo()
         });
     } else { 
         alert("Geolocation is not supported by this browser.");
