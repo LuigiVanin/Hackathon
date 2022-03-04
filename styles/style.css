@@ -1,3 +1,48 @@
-*{
+* {
     box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #333338, #181820);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 500px;
+    width: 768px;
+    background: linear-gradient(to right, #333338, #181820);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 5px rgba(255, 255, 255, 0.158);
+}
+
+form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-block: 25px;
+    gap: 10px;
+}
+
+input {
+    width: 30%;
+    padding-inline: 5px;
+    padding-block: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.search {
+    width: 35px;
+}
+
+button {
+    height: 35px;
 }
