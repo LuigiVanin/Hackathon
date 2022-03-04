@@ -30,7 +30,7 @@ header h1 {
 }
 
 main {
-    height: 500px;
+    height: 400px;
     width: 768px;
     background: #25252b;
     display: flex;
