@@ -4,5 +4,12 @@ function getTemperature(lat, lon){
 }
 
 function printTemperature(answer){
-    console.log(answer.data.main.temp - (273,15).toFixed(3));
+    console.log(answer.data.main.temp - (273.15).toFixed(3));
+
+    const icon = answer.data.weather[0].icon;
+
+    const putIcon = document.querySelector(".image");
+    putIcon.innerHTML = `
+    <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="">
+    `;
 }
