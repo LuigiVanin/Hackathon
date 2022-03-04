@@ -22,8 +22,7 @@ function printInfo(answer) {
     </div>
     <div class='info'>
         <h1>${temperature}°C</h1>
-        <p>${cityName}</p>
+        <p>${cityName}, ${countryName}</p>
     </div>
-    <p>${cityName}, ${countryName}</p>
     `;
 }
