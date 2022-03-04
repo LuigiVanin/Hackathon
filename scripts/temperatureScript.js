@@ -8,6 +8,7 @@ function printInfo(answer){
 
     const icon = answer.data.weather[0].icon;
     const cityName = answer.data.name;
+    const countryName = answer.data.sys.country;
 
     const putIcon = document.querySelector(".weather");
     
@@ -16,7 +17,7 @@ function printInfo(answer){
     <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="">
     <p>${temperature}°C</p>
     </div>
-    <p>${cityName}</p>
+    <p>${cityName}, ${countryName}</p>
     `;
 
     
