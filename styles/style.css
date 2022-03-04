@@ -3,31 +3,32 @@
 }
 
 body {
-    background: linear-gradient(to right, #333338, #2e2e36);
+    background: #25252b;
     width: 100vw;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
 }
 
 main {
     height: 500px;
     width: 768px;
-    background: linear-gradient(to right, #333338, #181820);
+    background: #25252b;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: -1px -1px 15px 0px rgba(255, 255, 255, 0.158);
 }
 
-form {
+.form {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
     padding-block: 25px;
-    gap: 10px;
+    gap: 5px;
 }
 
 input {
@@ -47,10 +48,7 @@ input {
     display: flex;
     align-items: center;
     justify-items: center;
-}
-
-.search ion-icon {
-    padding-bottom: -5px;
+    padding-left: 8px;
 }
 
 button {
@@ -61,4 +59,20 @@ button {
     background-color: rgb(113, 103, 252);
     color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(73, 67, 155);
+}
+
+.loc {
+    width: 180px;
+}
+
+.weather {
+    width: 85%;
+    height: calc(100% - 92px);
+    margin-inline: auto;
+    background-color: transparent;
 }
