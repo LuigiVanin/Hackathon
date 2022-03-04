@@ -105,10 +105,39 @@ button:hover {
     animation-duration: 3s;
 }
 
+.button-box {
+    display: flex;
+    gap: 5px;
+}
+
 @media (max-width: 780px) {
     main {
         width: 100%;
         border-radius: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .form {
+        flex-direction: column;
+        width: 100%;
+    }
+    .subtitle {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    .button-box {
+        margin-top: 15px;
     }
 }
 
