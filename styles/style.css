@@ -169,11 +169,14 @@ button:hover {
     0%{
         transform: translateY(0px)
     }
+    25%{
+        transform: translateY(-4px)
+    }
     50%{
-        transform: translateY(-10px)
+        transform: translateY(0px);
     }
     75%{
-        transform: translateY(5px)
+        transform: translateY(4px)
     }
     100%{
         transform: translatey(0px)
