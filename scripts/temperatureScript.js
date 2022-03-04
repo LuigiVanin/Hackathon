@@ -8,7 +8,7 @@ function printTemperature(answer){
 
     const icon = answer.data.weather[0].icon;
 
-    const putIcon = document.querySelector(".image");
+    const putIcon = document.querySelector(".weather");
     putIcon.innerHTML = `
     <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="">
     `;
